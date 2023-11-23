@@ -12,7 +12,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 ### 2. 安裝 mkcert
 
-```
+```bash
 choco install mkcert // install mkcert
 mkcert --version // check the mkcert version
 
