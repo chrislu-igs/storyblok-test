@@ -1,9 +1,6 @@
 <script setup>
-const { locale } = useI18n()
-const story = await useAsyncStoryblok('home', {
-  version: useRoute().query._storyblok ? 'draft' : 'published',
-  language: locale.value
-})
+const story = await useAsyncStoryblok('home', { version: 'draft' },
+{ customParent: 'https://app.storyblok.com' })
 </script>
 
 <template>
